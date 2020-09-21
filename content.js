@@ -1,5 +1,5 @@
-const ISSUE_REGEX = /[a-zA-Z]{1,5}-\d{1,4}/g;
-const ISSUE_REGEX_DESCRIPTION = /Ref[:]?[\s]?#[\s]?[a-zA-Z]{1,5}-\d{1,4}/g;
+const ISSUE_REGEX = /[a-zA-Z]{1,9}[-|\s]\d{1,4}/g;
+const ISSUE_REGEX_DESCRIPTION = /Ref[:]?[\s]?#[\s]?[a-zA-Z]{1,9}-\d{1,4}/g;
 
 function replaceIssue(element, regex) {
 	const match = element.html().match(regex);
